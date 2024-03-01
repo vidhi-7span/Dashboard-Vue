@@ -8,6 +8,8 @@ const toggle = ref(true);
 <template>
   <div class="flex relative">
     <Sidebar @close="toggle = false" :toggle="toggle"></Sidebar>
-    <Header @open="toggle = true"> </Header>
+    <Header @open="toggle = true" v-slot="slotProps">
+      {{ slotProps.text }}</Header
+    >
   </div>
 </template>

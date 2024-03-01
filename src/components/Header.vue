@@ -9,6 +9,9 @@
       Open
     </button>
     <p class="text-xl">Header</p>
+    <slot :text="msg" :count="1"></slot>
   </div>
 </template>
-<script setup></script>
+<script setup>
+const msg = "Hello from Scoped Slot";
+</script>
