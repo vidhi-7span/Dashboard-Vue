@@ -4,7 +4,7 @@
   >
     <button
       @click="$emit('open')"
-      class="bg-gray-600 font-bold p-3 text-white rounded-full"
+      class="bg-gray-600 font-bold p-3 text-white rounded-full md:hidden"
     >
       Open
     </button>
