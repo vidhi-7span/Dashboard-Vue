@@ -1,5 +1,5 @@
 <template>
   <div>
-    <p class="text-2xl">Header</p>
+    <p class="text-xl">Header</p>
   </div>
 </template>
