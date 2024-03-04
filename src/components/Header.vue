@@ -9,9 +9,13 @@
       Open
     </button>
     <p class="text-xl">Header</p>
-    <slot :text="msg" :count="1"></slot>
+    <slot :text="msg" :fun="data" :count="1"></slot>
   </div>
 </template>
+
 <script setup>
 const msg = "Hello from Scoped Slot";
+const data = () => {
+  console.log(msg);
+};
 </script>
